@@ -18,6 +18,7 @@ h1 {
 .vrstica {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .ime, .stanje {
 }

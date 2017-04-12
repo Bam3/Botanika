@@ -1,0 +1,26 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 300;
+}
+.container {
+  background-color: #B3D6C0;
+  padding: 50px 100px 25px 75px;
+  margin: 100px 100px;
+  width: 900px;
+  height: 400px;
+}
+.vrstica {
+  display: flex;
+  justify-content: space-between;
+}
+.ime, .stanje {
+}
+.podnaslov {
+  font-size: 20px;
+  font-weight: bold;
+}

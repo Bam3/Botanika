@@ -21,11 +21,14 @@ var ustvariRozo = function(ime, stanje){
   //ker smo dali class seznam v starse z appendom porinemo novoVrstico v seznam
   starsi.append(novaVrstica)
 }
-ustvariRozo("Figov fikus", "Preveč zalito - odcedi")
-ustvariRozo("Spatifil", "ODLIČNO HIDRIRAN")
+
+var prejmiPodatke = function(roze) {
+  for (var i = 0; i < roze.length; i++) {
+    ustvariRozo(roze[i].name, roze[i].status)
+  }
+  //console.log('Tukaj so naše rože!', roze);
+}
 
 fetch('https://api.myjson.com/bins/1fhow7')
   .then(response => response.json())
-  .then(function(roze) {
-    console.log('Tukaj so naše rože!', roze);
-  })
+  .then(prejmiPodatke)

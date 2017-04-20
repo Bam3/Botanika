@@ -22,7 +22,8 @@ h1 {
   margin-bottom: 15px;
 }
 .ime, .stanje {
-  font-style: italic, red;
+  font-style: italic;
+  color: red;
 }
 .podnaslov {
   font-size: 20px;

@@ -5,7 +5,7 @@ var ustvariRozo = function(ime, stanje){
   // ustvarimo nov element "DIV" in mu dodamo class "ime"
   var novoIme = document.createElement("div")
   novoIme.classList.add("ime")
-  //
+  //doda tekst v div ime, ki ga pobere iz prvega parametra funkcije (string)
   novoIme.append(ime)
 
   var novoStanje = document.createElement("div")

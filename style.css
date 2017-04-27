@@ -20,22 +20,22 @@ h1 {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.ime, .stanje {
+.ime {
 }
 .status-red {
-  background: -webkit-linear-gradient(45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 0%,rgba(240,47,23,1) 66%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 84%,rgba(231,56,39,1) 100%);
+  background: linear-gradient(45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 0%,rgba(240,47,23,1) 66%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 84%,rgba(231,56,39,1) 100%);
   width: 70px;
   height: 70px;
   border-radius: 40px 30px 40px 30px;;
 }
 .status-yellow {
-  background:-webkit-linear-gradient(45deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 53%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 97%);
+  background:linear-gradient(45deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 53%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 97%);
   width: 70px;
   height: 70px;
   border-radius: 40px 30px 40px 30px;
 }
 .status-green {
-  background: -webkit-linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 94%,#002400 100%);
+  background: linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 94%,#002400 100%);
   width: 70px;
   height: 70px;
   border-radius: 40px 30px 40px 30px;
@@ -44,4 +44,7 @@ h1 {
   font-size: 25px;
   color: #75A28E;
   margin-bottom: 20px;
+}
+.vrstica:not(.podnaslov) .ime {
+  line-height: 70px;
 }

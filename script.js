@@ -11,7 +11,7 @@ var ustvariRozo = function(ime, stanje){
   var novoStanje = document.createElement("div")
   // class se dinamično zbira glede na zalitost rož
   //Class določamo glede na vlažnost
-  novoStanje.classList.add(pobarvajStatus(stanje))
+  novoStanje.classList.add(dolociClassStatus(stanje))
   //novoStanje.append(stanje)
   // append združi v novoVrstico, novoIme in novoStanje, sta soseda
   novaVrstica.append(novoIme)
@@ -31,7 +31,7 @@ var prejmiPodatke = function(roze) {
   //console.log('Tukaj so naše rože!', roze);
 }
 // funkcija ki izbira stil glede na podatke vlažnosti rastline
-var pobarvajStatus= function(stanje){
+var dolociClassStatus= function(stanje){
   if (stanje < 0.25) {
     return "status-red"
   }

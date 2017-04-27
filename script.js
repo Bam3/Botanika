@@ -9,8 +9,10 @@ var ustvariRozo = function(ime, stanje){
   novoIme.append(ime)
 
   var novoStanje = document.createElement("div")
-  novoStanje.classList.add("stanje")
-  novoStanje.append(stanje)
+  // class se dinamično zbira glede na zalitost rož
+  //Class določamo glede na vlažnost
+  novoStanje.classList.add(pobarvajStatus(stanje))
+  //novoStanje.append(stanje)
   // append združi v novoVrstico, novoIme in novoStanje, sta soseda
   novaVrstica.append(novoIme)
   novaVrstica.append(novoStanje)
@@ -27,6 +29,18 @@ var prejmiPodatke = function(roze) {
     ustvariRozo(roze[i].name, roze[i].status)
   }
   //console.log('Tukaj so naše rože!', roze);
+}
+// funkcija ki izbira stil glede na podatke vlažnosti rastline
+var pobarvajStatus= function(stanje){
+  if (stanje < 0.25) {
+    return "status-red"
+  }
+  if (0.25 <= stanje && stanje <= 0.75) {
+    return "status-yellow"
+  }
+  if (stanje > 0.75) {
+    return "status-green"
+  }
 }
 
 fetch('https://api.myjson.com/bins/1fhow7')

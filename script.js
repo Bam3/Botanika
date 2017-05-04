@@ -7,12 +7,13 @@ var ustvariRozo = function(ime, stanje){
   novoIme.classList.add("ime")
   //doda tekst v div ime, ki ga pobere iz prvega parametra funkcije (string)
   novoIme.append(ime)
-
+  // Ustvarimo nov element, ki bo služil za prikazovanje stanja
   var novoStanje = document.createElement("div")
-  // class se dinamično zbira glede na zalitost rož
-  //Class določamo glede na vlažnost
+  // Elementu dodelimo univerzalni Class za status
   novoStanje.classList.add("status")
+  // S funkcijo dodamo Class ki pobarva stanje glede na zalitost
   novoStanje.classList.add(dolociClassStatus(stanje))
+  // Izračunamo še procente zalitosti.
   novoStanje.append(Math.round(stanje * 100) + "%")
   // append združi v novoVrstico, novoIme in novoStanje, sta soseda
   novaVrstica.append(novoIme)

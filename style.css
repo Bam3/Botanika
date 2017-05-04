@@ -29,6 +29,8 @@ h1 {
   line-height: 70px;
   font-size: 15px;
   text-align: center;
+  border-top-style: outset;
+  border-color: gray;
 }
 .status-red {
   background: linear-gradient(45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 0%,rgba(240,47,23,1) 66%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 84%,rgba(231,56,39,1) 100%);

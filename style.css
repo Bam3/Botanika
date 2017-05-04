@@ -22,32 +22,22 @@ h1 {
 }
 .ime {
 }
-.status-red {
-  background: linear-gradient(45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 0%,rgba(240,47,23,1) 66%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 84%,rgba(231,56,39,1) 100%);
+.status {
   width: 70px;
   height: 70px;
   border-radius: 40px 30px 40px 30px;
   line-height: 70px;
   font-size: 15px;
   text-align: center;
+}
+.status-red {
+  background: linear-gradient(45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 0%,rgba(240,47,23,1) 66%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 77%,rgba(246,41,12,1) 84%,rgba(231,56,39,1) 100%);
 }
 .status-yellow {
   background:linear-gradient(45deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 53%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 91%,rgba(248,181,0,1) 97%);
-  width: 70px;
-  height: 70px;
-  border-radius: 40px 30px 40px 30px;
-  line-height: 70px;
-  font-size: 15px;
-  text-align: center;
 }
 .status-green {
   background: linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 94%,#002400 100%);
-  width: 70px;
-  height: 70px;
-  border-radius: 40px 30px 40px 30px;
-  line-height: 70px;
-  font-size: 15px;
-  text-align: center;
 }
 .podnaslov {
   font-size: 25px;

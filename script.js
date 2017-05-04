@@ -11,6 +11,7 @@ var ustvariRozo = function(ime, stanje){
   var novoStanje = document.createElement("div")
   // class se dinamično zbira glede na zalitost rož
   //Class določamo glede na vlažnost
+  novoStanje.classList.add("status")
   novoStanje.classList.add(dolociClassStatus(stanje))
   novoStanje.append(Math.round(stanje * 100) + "%")
   // append združi v novoVrstico, novoIme in novoStanje, sta soseda
